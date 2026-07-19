@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="card">
+
+        <h1>🌤 Weather App</h1>
+
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <p id="loading">Loading...</p>
+        <p id="error">City not found!</p>
+
+        <div class="weather">
+            <img id="weatherIcon"
+                src="https://openweathermap.org/img/wn/01d@2x.png"
+                alt="weather">
+
+            <h2 id="temp">0°C</h2>
+            <h3 id="city">City Name</h3>
+            <p id="description">Clear Sky</p>
+
+            <div class="details">
+
+                <div class="box">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <h3 id="humidity">0%</h3>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <h3 id="wind">0 km/h</h3>
+                        <p>Wind</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

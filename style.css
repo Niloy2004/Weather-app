@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search button {
+    width: 55px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+    color: #0072ff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    transform: scale(1.05);
+}
+
+#loading,
+#error {
+    display: none;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#error {
+    color: #ffd6d6;
+}
+
+.weather img {
+    width: 120px;
+    margin: 10px 0;
+}
+
+.weather h2 {
+    font-size: 64px;
+    margin-bottom: 5px;
+}
+
+.weather h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.weather p {
+    font-size: 18px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box i {
+    font-size: 28px;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+
+    .weather h2 {
+        font-size: 52px;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+}
